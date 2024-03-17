@@ -1,0 +1,16 @@
+.container {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #2EE59D;
+  background-color: white;
+  padding: 20px 25px 20px 25px;
+  border-radius: 10px;
+}

@@ -1,19 +1,38 @@
 .authNav {
   display: flex;
   gap: 30px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.linkAuthNav {
-  color: white;
+.linkRegister, .linkLogin {
   text-decoration: none;
+  font-weight: 700;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 0 auto;
 }
 
-.linkAuthNav:hover {
-  color: #2EE59D;
-  text-decoration: underline;
+.linkRegister {
+  background-color: #2ee59d;
+  color: white;
 }
 
-.linkAuthNav.active {
-  color: #2EE59D;
+.linkRegister:hover {
+  background-color: white;
+  color: #2ee59d;
+}
+
+.linkLogin {
+  background-color: white;
+  color: #2ee59d;
+}
+
+.linkLogin:hover {
+  background-color: #2ee59d;
+  color: white;
 }

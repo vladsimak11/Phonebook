@@ -4,11 +4,11 @@ import css from './AuthNav.module.css';
 export const AuthNav = () => {
   return (
     <div className={css.authNav}>
-      <NavLink className={css.linkAuthNav} to="/register">
-        Register
+      <NavLink className={css.linkRegister} to="/register">
+        Sign Up
       </NavLink>
-      <NavLink className={css.linkAuthNav} to='/login'>
-        Log In
+      <NavLink className={css.linkLogin} to="/login">
+        Sign In
       </NavLink>
     </div>
   );

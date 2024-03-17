@@ -21,11 +21,23 @@ export const LoginForm = () => {
   return (
     <form autoComplete="off" onSubmit={handleSubmit} className={css.form}>
       <div className={css.title}>Login</div>
-        <input className={css.input} type="email" name="email" placeholder='Email' />
+      <input
+        className={css.input}
+        type="email"
+        name="email"
+        placeholder="vladsimak11@gmail.com"
+      />
 
-        <input className={css.input} type="password" name="password" placeholder='Password'/>
-        
-      <button className={css.button} type="submit">Log In</button>
+      <input
+        className={css.input}
+        type="password"
+        name="password"
+        placeholder="Password"
+      />
+
+      <button className={css.button} type="submit">
+        Login
+      </button>
     </form>
   );
 };

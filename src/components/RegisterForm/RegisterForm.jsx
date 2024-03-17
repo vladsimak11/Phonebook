@@ -19,18 +19,33 @@ export const RegisterForm = () => {
     form.reset();
   };
 
-  
-
   return (
     <form autoComplete="off" onSubmit={handleSubmit} className={css.form}>
       <div className={css.title}>Registration</div>
-        <input className={css.input} type="text" name="name" placeholder='Username'/>
+      <input
+        className={css.input}
+        type="text"
+        name="name"
+        placeholder="Vladyslav"
+      />
 
-        <input className={css.input} type="email" name="email" placeholder='Email' />
+      <input
+        className={css.input}
+        type="email"
+        name="email"
+        placeholder="vladsimak11@gmail.com"
+      />
 
-        <input className={css.input} type="password" name="password" placeholder='Password'/>
-        
-      <button className={css.button} type="submit">Register</button>
+      <input
+        className={css.input}
+        type="password"
+        name="password"
+        placeholder="Password"
+      />
+
+      <button className={css.button} type="submit">
+        Register
+      </button>
     </form>
   );
 };
