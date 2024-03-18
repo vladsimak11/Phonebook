@@ -5,11 +5,13 @@ import css from './Layout.module.css';
 
 export const Layout = () => {
   return (
-    <div className={css.layout}>
+    <>
       <AppBar />
-        <Suspense fallback={null}>
-          <Outlet />
-        </Suspense>
-    </div>
+        <div className={css.container}>
+          <Suspense fallback={null}>
+            <Outlet />
+          </Suspense>
+        </div>
+    </>
   );
 };
