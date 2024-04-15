@@ -55,3 +55,9 @@ p {
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --light-green: #2ee59d;
+  --dark-blue: #15172b;
+  --white: #ffffff;
+}
