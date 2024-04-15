@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import css from './Home.module.css';
+import {Title} from './Home.styled';
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <h1 className={css.title}>Welcome to your Phonebook</h1>
+      <Title>Welcome to your Phonebook</Title>
     </>
   );
 }

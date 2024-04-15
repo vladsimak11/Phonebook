@@ -1,17 +1,17 @@
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { AppBar } from './AppBar/AppBar';
-import css from './Layout.module.css';
+import {Container} from './Layout.styled';
 
 export const Layout = () => {
   return (
     <>
       <AppBar />
-        <div className={css.container}>
-          <Suspense fallback={null}>
-            <Outlet />
-          </Suspense>
-        </div>
+      <Container>
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+      </Container>
     </>
   );
 };

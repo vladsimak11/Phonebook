@@ -1,5 +1,6 @@
+import styled from 'styled-components';
 
-.title {
+export const Title = styled.h1`
   font-weight: 700;
   font-size: 48px;
   text-align: center;
@@ -7,5 +8,9 @@
   background-color: white;
   padding: 20px 25px 20px 25px;
   border-radius: 10px;
-}
+  width: 700px;
 
+  @media screen and (max-width: 360px) {
+    width: 300px;
+  }
+`;
