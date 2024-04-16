@@ -5,6 +5,10 @@ export const AuthNavList = styled.div`
   display: flex;
   gap: 30px;
   font-size: 20px;
+
+  @media screen and (max-width: 480px) {
+    gap: 15px;
+  }
 `;
 
 export const LinkRegister = styled(NavLink)`
