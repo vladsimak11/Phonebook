@@ -7,7 +7,7 @@ export const UserMenuBlock = styled.div`
 `;
 
 export const UserName = styled.p`
-  color: white;
+  color: var(--white);
   
   @media screen and (max-width: 480px) {
     display: none;
@@ -17,11 +17,11 @@ export const UserName = styled.p`
 export const Logout = styled.button`
   width: 120px;
   border: none;
-  background-color: #2EE59D;
+  background-color: var(--light-green);
   font-size: 16px;
   font-weight: 500;
   padding: 8px;
-  color: white;
+  color: var(--white);
   border-radius: 10px;
   text-transform: uppercase; 
   transition: all 0.3s ease 0s;

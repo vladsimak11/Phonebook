@@ -23,7 +23,7 @@ export const Input = styled.input`
   outline: none;
 
   &:focus {
-    border: 2px solid #2EE59D;
+    border: 2px solid var(--light-green);
   }
 
 `;
@@ -31,11 +31,11 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: 150px;
   border: none;
-  background-color: #2EE59D;
+  background-color: var(--light-green);
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
-  color: white;
+  color: var(--white);
   border-radius: 10px;
   text-transform: uppercase;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);

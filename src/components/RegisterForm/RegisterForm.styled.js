@@ -43,11 +43,11 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: 150px;
   border: none;
-  background-color: #2EE59D;
+  background-color: var(--light-green);
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
-  color: white;
+  color: var(--white);
   border-radius: 10px;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;

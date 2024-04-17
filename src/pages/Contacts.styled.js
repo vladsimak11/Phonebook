@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainBlock = styled.div`
-  background-color: #EDEDED;
+  background-color: var(--light-gray);
   display: flex;
   flex-direction: column;
   width: 480px;

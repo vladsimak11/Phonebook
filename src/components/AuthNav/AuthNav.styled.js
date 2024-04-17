@@ -27,12 +27,12 @@ export const LinkRegister = styled(NavLink)`
     padding: 5px 10px 5px 10px;
   }
 
-  background-color: #2ee59d;
-  color: white;
+  background-color: var(--light-green);
+  color: var(--white);
 
   &:hover {
-    background-color: white;
-    color: #2ee59d;
+    background-color: var(--white);
+    color: var(--light-green);
   }
 `;
 
@@ -52,11 +52,11 @@ export const LinkLogin = styled(NavLink)`
     padding: 5px 10px 5px 10px;
   }
 
-  background-color: white;
-  color: #2ee59d;
+  background-color: var(--white);
+  color: var(--light-green);
 
   &:hover {
-    background-color: #2ee59d;
-    color: white;
+    background-color: var(--light-green);
+    color: var(--white);
   }
 `;
