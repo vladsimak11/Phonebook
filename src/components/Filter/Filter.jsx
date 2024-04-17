@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import css from './Filter.module.css';
+import {Label, Input} from './Filter.styled';
 import {getFilterValue} from '../../redux/contacts/selectors';
 import {filterContacts} from '../../redux/contacts/filterSlice';
 
@@ -12,19 +12,17 @@ export const Filter = () => {
     dispatch(filterContacts(event.target.value));
   }
 
-
   return (
-    <label className={`${css.label} ${css.filter}`}>
-          Find contacts by name
-          <input
-            className={css.input}
-            type="text"
-            placeholder="Enter your name"
-            name="filter"
-            value = {filterValue}
-            onChange={handleFilter}
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          />
-        </label>
+    <Label>
+      Find contacts by name
+      <Input
+        type="text"
+        placeholder="Enter your name"
+        name="filter"
+        value = {filterValue}
+        onChange={handleFilter}
+        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+        />
+    </Label>
   )
 }

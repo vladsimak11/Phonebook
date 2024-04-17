@@ -1,8 +1,27 @@
 import styled from 'styled-components';
 
-export const Form = styled.form`
+export const MainBlock = styled.div`
+  background-color: #EDEDED;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  width: 480px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 8px solid var(--light-green);
+  border-radius: 10px;
+
+  @media screen and (max-width: 480px) {
+    width: 320px;
+    padding: 15px;
+  }
+`;
+
+export const Header1 = styled.h1`
+  text-align: center;
+`;
+
+export const Header2 = styled.h2`
+  text-align: center;
+  margin-bottom: 10px;
 `;

@@ -2,9 +2,9 @@ import { ContactList } from '../components/ContactList/ContactList';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Filter } from '../components/Filter/Filter';
 import { fetchContacts } from "../redux/contacts/operations";
+import { MainBlock, Header1, Header2 } from './Contacts.styled';
 
 import {  getIsLoading } from "../redux/contacts/selectors";
-import css from './Contacts.module.css';
 
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -33,14 +33,14 @@ export default function Contacts() {
       <Helmet>
         <title>Your contacts</title>
       </Helmet>
-        <div className={css.mainBlock}>
-          <h1>Phonebook</h1>
+        <MainBlock>
+          <Header1>Phonebook</Header1>
           <ContactForm />
           <div>{isLoading && <ThreeDots />}</div>
-          <h2>Contacts</h2>
+          <Header2>Contacts</Header2>
           <Filter />
           <ContactList />
-        </div>
+        </MainBlock>
     </div>
   );
 }

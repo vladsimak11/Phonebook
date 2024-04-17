@@ -1,22 +1,20 @@
-.label {
+import styled from 'styled-components';
+
+export const Label = styled.label`
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 20px;
-}
+`;
 
-.input {
+export const Input = styled.input`
   height: 25px;
   font: inherit;
   border: 2px solid #c1c1c1;
   padding: 5px 0px 5px 10px;
   outline: none;
-}
 
-.input:focus {
-  border: 2px solid #2EE59D;
-}
-
-.filter {
-  margin-bottom: 20px;
-}
+  &:focus {
+    border: 2px solid var(--light-green);
+  }
+`;

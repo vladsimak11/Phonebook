@@ -1,10 +1,13 @@
-.list {
+import styled from 'styled-components';
+
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+  margin-top: 20px;
+`;
 
-.item {
+export const Item = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,14 +16,19 @@
   font-size: 20px;
   font-weight: 600;
   list-style-type: circle;
-}
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
 
-.span {
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
+
+export const Info = styled.span`
   display: block;
-}
+`;
 
-
-.delete {
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +50,8 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-}
 
-.delete:hover {
-  opacity: 0.7;
-}
+  &:hover {
+    opacity: 0.7;
+  }
+`;

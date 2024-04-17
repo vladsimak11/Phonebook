@@ -4,6 +4,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 `;
 
@@ -42,6 +43,8 @@ export const Button = styled.button`
   cursor: pointer;
   outline: none;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover {
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
