@@ -19,9 +19,11 @@ export const MainBlock = styled.div`
 
 export const Header1 = styled.h1`
   text-align: center;
+  color: var(--dark-blue);
 `;
 
 export const Header2 = styled.h2`
   text-align: center;
   margin-bottom: 10px;
+  color: var(--dark-blue);
 `;

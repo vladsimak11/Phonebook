@@ -24,8 +24,20 @@ export const Item = styled.li`
   }
 `;
 
-export const Info = styled.span`
+export const Info = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
+export const Name = styled.span`
   display: block;
+  color: #ff6f61;
+  letter-spacing: 0.1em;
+`;
+
+export const Number = styled.span`
+  display: block;
+  color: var(--dark-blue);
 `;
 
 export const Button = styled.button`
