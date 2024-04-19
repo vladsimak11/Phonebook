@@ -28,7 +28,7 @@ export default function Contacts() {
         justifyContent: 'center',
         alignItems: 'center',
         color: '#010101',
-        paddingTop: '80px',
+        paddingTop: '60px',
       }}>
       <Helmet>
         <title>Your contacts</title>

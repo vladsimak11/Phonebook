@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const MainBlock = styled.div`
+  max-height: 580px; 
+  overflow-y: auto; 
   background-color: var(--light-gray);
   display: flex;
   flex-direction: column;
@@ -12,8 +14,13 @@ export const MainBlock = styled.div`
   border-radius: 10px;
 
   @media screen and (max-width: 480px) {
-    width: 320px;
+    width: 300px;
     padding: 15px;
+    max-height: 580px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-height: 500px; 
   }
 `;
 
