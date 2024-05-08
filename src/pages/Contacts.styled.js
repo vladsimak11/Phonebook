@@ -1,5 +1,18 @@
 import styled from 'styled-components';
 
+export const ContactsBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #010101;
+  padding-top: 60px;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 15px;
+  }
+`;
+
 export const MainBlock = styled.div`
   max-height: 580px; 
   overflow-y: auto; 
@@ -16,7 +29,8 @@ export const MainBlock = styled.div`
   @media screen and (max-width: 480px) {
     width: 300px;
     padding: 15px;
-    max-height: 580px;
+    padding-top: 10px;
+    height: 460px;
   }
 
   @media screen and (max-width: 768px) {

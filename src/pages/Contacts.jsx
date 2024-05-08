@@ -2,7 +2,7 @@ import { ContactList } from '../components/ContactList/ContactList';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Filter } from '../components/Filter/Filter';
 import { fetchContacts } from "../redux/contacts/operations";
-import { MainBlock, Header1, Header2 } from './Contacts.styled';
+import { ContactsBlock, MainBlock, Header1, Header2 } from './Contacts.styled';
 
 import {  getIsLoading } from "../redux/contacts/selectors";
 
@@ -21,15 +21,7 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <div       
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: '#010101',
-        paddingTop: '60px',
-      }}>
+    <ContactsBlock>
       <Helmet>
         <title>Your contacts</title>
       </Helmet>
@@ -41,6 +33,6 @@ export default function Contacts() {
           <Filter />
           <ContactList />
         </MainBlock>
-    </div>
+    </ContactsBlock>
   );
 }

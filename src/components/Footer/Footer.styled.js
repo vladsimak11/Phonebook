@@ -15,11 +15,15 @@ export const FooterBlock = styled.footer`
   padding-bottom: 10px;
 
   @media screen and (max-width: 480px) {
-    height: 60px;
+    height: 40px;
   }
 `;
 
 export const FooterText = styled.p`
   text-align: center;
   font-size: 20px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;

@@ -5,6 +5,10 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 15px;
+  }
 `;
 
 export const Item = styled.li`

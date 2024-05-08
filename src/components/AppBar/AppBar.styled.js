@@ -10,7 +10,7 @@ export const Header = styled.header`
     height: 80px;
 
   @media screen and (max-width: 480px) {
-    height: 70px;
+    height: 60px;
     padding: 0 15px 0 15px;
   }
 `;
